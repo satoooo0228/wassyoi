@@ -8,7 +8,9 @@ var msg = "現在時刻は、" + nowHour + ":" + nowMin + ":" + nowSec + " で�
 document.getElementById("RealtimeClockArea").innerHTML = msg;
 </script>
 
+<header>今週のログインスタンプ</header>
 <% day = Date.today.wday %>
 <% nowTime = DateTime.now %>
 <% days = ["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"] %>
-<%=  "今日は#{days[day]}です。現在時刻は#{nowTime.hour}時#{nowTime.minute}分#{nowTime.second}秒です" %>
+<%=  "今日は#{days[day]}です。ログイン時刻は#{nowTime.hour}時#{nowTime.minute}分#{nowTime.second}秒です" %>
+
